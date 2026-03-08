@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,3 +29,546 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ZENVO</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm py-3">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold fs-3 text-dark" href="#">ZENVO COMPUTERS</a>
+
+            <!-- Toggler / Mobile menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+
+                <!-- Nav Links -->
+                <ul class="navbar-nav align-items-center me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 py-2 rounded" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded" href="products.html">Products</a>
+                    </li>
+                </ul>
+
+                <!-- Search Form before login button-->
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                    <button class="btn btn-warning" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Login Button after search bar -->
+                <a href="login.html" class="btn btn-warning btn-sm px-4 py-2">
+                    Login
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Banner -->
+
+    <div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/homebanner1.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <!-- <h1>Welcome to ZENVO Computers</h1> -->
+                    <p>Your destination for high-performance PC hardware</p>
+                    <a href="products.html" class="btn btn-warning btn-lg">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/intel processor banner.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h1>Powerful Processors</h1>
+                    <p>Experience the speed of CPUs</p>
+                    <a href="products.html" class="btn btn-warning btn-lg">Explore</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/custom_builds.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h1>Customize your build</h1>
+                    <p>Performance meets efficiency</p>
+                    <a href="products.html" class="btn btn-warning btn-lg">Build Now</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+
+
+    <!-- BRANDS -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">Popular Brands</h2>
+
+            <!-- RYZEN -->
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card text-center">
+
+                        <img src="images/ryzen-logo.jpg" class="card-img-top">
+
+                        <div class="card-body">
+                            <h6>RYZEN</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- INTEL -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card text-center">
+
+                        <img src="images/Intel-logo.jpg" class="card-img-top">
+
+                        <div class="card-body">
+                            <h6>INTEL</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- NVIDIA -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card text-center">
+
+                        <img src="images/NVIDIA-Logo.jpg" class="card-img-top">
+
+                        <div class="card-body">
+                            <h6>NVIDIA</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- AMD_Radeon -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card text-center">
+
+                        <img src="images/AMD_Radeon.jpg" class="card-img-top">
+
+                        <div class="card-body">
+                            <h6>AMD RADEON</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CATEGORIES -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                Shop by Category
+            </h2>
+
+            <div class="row g-4 text-center">
+
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="category-box p-4 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center flex-column">
+                        <i class="bi bi-cpu fs-1 mb-3 text-warning"></i>
+                        <h5>Processors</h5>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="category-box p-4 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center flex-column">
+                    <i class="bi bi-graphic-card fs-1 mb-3 text-warning"></i>
+                    <h5>Graphics Cards</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="category-box p-4 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center flex-column">
+                    <i class="bi bi-display fs-1 mb-3 text-warning"></i>
+                    <h5>Monitors</h5>
+                </div>
+            </div> -->
+
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="category-box p-4 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center flex-column">
+                        <i class="bi bi-keyboard fs-1 mb-3 text-warning"></i>
+                        <h5>Peripherals</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="category-box p-4 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center flex-column">
+                        <i class="bi bi-hdd-stack fs-1 mb-3 text-warning"></i>
+                        <h5>Storage & Memory</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <div
+                        class="category-box p-4 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center flex-column">
+                        <i class="bi bi-tools fs-1 mb-3 text-warning"></i>
+                        <h5>Custom Builds</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <!-- <h2 class="text-center mb-5"></h2> -->
+
+            <!-- Monitor -->
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card text-center h-100" data-aos="fade-up">
+
+                        <div class="card text-center">
+
+                            <img src="images/monitor.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>Monitors</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- GamingTower -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/gamingtower.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>Gaming Towers</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Keyboards -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/keyboardmechanical.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>Keyboards</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Mouse-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/mouse.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>Mouse</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5">
+
+        <div class="container">
+
+
+            <!--SSD-->
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/ssd.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>SSD</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--HDD-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/hdd.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>HDD</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--NVME-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/nvme.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>NVME</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Headset -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100" data-aos="fade-up">
+                        <div class="card text-center">
+
+                            <img src="images/headset.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h6>Headsets</h6>
+                                <a href="#" class="btn btn-warning mt-2"><i class="bi bi-cart"></i> Buy Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up">
+                    <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                        <i class="bi bi-pc-display me-2 text-primary fs-3"></i>
+                        <span class="sitename fs-4 fw-bold">ZENVO COMPUTERS</span>
+                    </a>
+                    <p class="text-secondary">
+                        Your trusted PC hardware partner in Sri Lanka! We provide high-performance components and custom
+                        builds with warranty assurance and friendly support.
+                    </p>
+
+                    <!-- Social / Contact Icons -->
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-white me-3 fs-4"
+                            title="Facebook" aria-label="Visit our Facebook page">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="text-white me-3 fs-4" title="YouTube"
+                            aria-label="Visit our YouTube channel">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="mailto:info@zenvo.lk" class="text-white me-3 fs-4" title="Email"
+                            aria-label="Send us an Email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="text-white me-3 fs-4"
+                            title="LinkedIn" aria-label="Visit our LinkedIn page">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-lg-2 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="fw-bold fs-5 mb-3 text-primary">Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> About Us</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> Products</a></li>
+                        <li><a href="#" class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> Terms of Service</a></li>
+                        <li><a href="#" class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Brands -->
+                <div class="col-lg-2 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="fw-bold fs-5 mb-3 text-primary">Popular Brands</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.apple.com/" target="_blank" rel="noopener"
+                                class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> RYZEN</a></li>
+                        <li><a href="https://www.samsung.com/" target="_blank" rel="noopener"
+                                class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> INTEL</a></li>
+                        <li><a href="https://store.google.com/" target="_blank" rel="noopener"
+                                class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> NVIDIA</a></li>
+                        <li><a href="https://www.oneplus.com/" target="_blank" rel="noopener"
+                                class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> AMD</a></li>
+                        <li><a href="https://www.mi.com/" target="_blank" rel="noopener"
+                                class="text-white text-decoration-none py-1 d-block"><i
+                                    class="bi bi-chevron-right me-1 small"></i> AURA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-12 mb-4 text-center text-md-start" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="fw-bold fs-5 mb-3 text-primary">Contact Us</h4>
+                    <p class="mb-1">110 Farm Road</p>
+                    <p class="mb-1">Mattakkuliya, Colombo 15</p>
+                    <p class="mb-3">Sri Lanka</p>
+                    <p class="mt-4 mb-1"><strong>Phone:</strong> <span class="text-secondary">+94 11 234 5678</span></p>
+                    <p class="mb-0"><strong>Email:</strong> <span class="text-secondary">info@zenvoonline.lk</span></p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="container copyright text-center pt-3 mt-4 border-top border-secondary border-opacity-25">
+                <p class="mb-1 text-secondary small">
+                    © 2026 <strong class="px-1 sitename text-white">ZENVO</strong> - All Rights Reserved
+                </p>
+                <div class="credits small text-secondary mt-2">
+                    <span>Trusted PC Retailer since 2020</span>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true      // animation happens only once while scrolling
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
+>>>>>>> 5e6d049 (Updated homepage files for index-page branch)
