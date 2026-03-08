@@ -131,17 +131,6 @@ const productsData = [
         status: "In Stock",
         category: "Storage & Memory",
         brand: "Kingston"
-    },
-    {
-        id: 13,
-        name: "Kingston Fury Beast 64GB",
-        description: "DDR5 5600MHz RAM Kit",
-        price: 79990,
-        image: "images/AMD_Radeon.jpg",
-        rating: 4,
-        status: "In Stock",
-        category: "Storage & Memory",
-        brand: "Kingston"
     }
 ];
 
@@ -177,9 +166,9 @@ function createProductCard(product, index) {
                 <span class="fw-bold text-warning fs-5">
                     Rs. ${product.price.toLocaleString()}
                 </span>
-                <button class="btn btn-sm btn-dark">
-                    View
-                </button>
+                <label class="btn btn-sm btn-outline-secondary mb-0">
+                    Rating : ${product.rating} <i class="fas fa-star"></i>
+                </label>
             </div>
         </div>
     </div>
@@ -347,17 +336,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Filter products based on search term (legacy support)
-function filterProducts(searchTerm) {
-    let filteredProducts = filterByCategory(currentCategory);
-    filteredProducts = filteredProducts.filter(product =>
-        product.name.toLowerCase().includes(searchTerm) ||
-        product.description.toLowerCase().includes(searchTerm) ||
-        product.category.toLowerCase().includes(searchTerm) ||
-        product.brand.toLowerCase().includes(searchTerm)
-    );
-    renderProducts(filteredProducts, 1); // Reset to page 1
-}
+// ================= FILTER & SORT FUNCTIONS =================
 
 // Filter products by category
 function filterByCategory(category) {
@@ -365,12 +344,6 @@ function filterByCategory(category) {
         return [...productsData];
     }
     return productsData.filter(product => product.category === category);
-}
-
-// Show all products (legacy support)
-function showAllProducts() {
-    currentCategory = 'All';
-    renderProducts(productsData, 1); // Reset to page 1
 }
 
 // Sort products
@@ -399,17 +372,3 @@ function updateProductCount(count) {
         countElement.textContent = count;
     }
 }
-
-// Smooth scroll for navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
