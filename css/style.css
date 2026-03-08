@@ -173,6 +173,126 @@ footer {
 
 
 
+/* ================= PRODUCTS PAGE ================= */
+
+/* Product Grid - Full Width Layout */
+#productsGrid {
+    min-height: 400px;
+}
+
+/* Category Filter Buttons */
+.category-filters {
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    border: 2px solid #ffc107;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #ffc107;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+}
+
+.category-btn.active {
+    background-color: #ffc107;
+    color: #000;
+    border-color: #ffc107;
+}
+
+.category-btn i {
+    font-size: 1rem;
+}
+
+/* Filter checkboxes and radios */
+.form-check-input:checked {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.form-check-input:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+/* Product Card Badges */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Product Card Transition */
+.card {
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Rating Stars */
+.rating i {
+    font-size: 0.85rem;
+}
+
+/* Sort Select Styling */
+.form-select:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+.sort-select {
+    width: auto;
+    min-width: 200px;
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+    color: #333;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+.pagination .page-link:hover {
+    background-color: #fff3cd;
+    border-color: #ffc107;
+    color: #000;
+}
+
+/* Product Price Styling */
+.card-body .h5 {
+    font-weight: 700;
+}
+
+/* Price Tag Styling */
+.price-tag {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+    border: 2px solid #ffc107;
+    transition: all 0.3s ease;
+}
+
+.price-tag:hover {
+    background: linear-gradient(135deg, #ffe69c 0%, #ffc107 100%);
+    transform: scale(1.02);
+}
+
+
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
@@ -208,7 +328,47 @@ footer {
         left: 5%;
         text-align: left;
     }
+
+    /* Products Page - Mobile */
+    #productsGrid .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Category Filter Buttons - Mobile */
+    .category-btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.9rem;
+    }
+
+    .category-btn i {
+        font-size: 0.85rem;
+    }
+
+    /* Product cards - 2 columns on small screens */
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
   
     
+}
+
+@media (max-width: 576px) {
+    /* Products Page - Full width on extra small screens */
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust product title font size */
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    /* Adjust sort dropdown on mobile */
+    .form-select {
+        font-size: 0.85rem;
+    }
 }
 >>>>>>> 5e6d049 (Updated homepage files for index-page branch)
